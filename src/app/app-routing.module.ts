@@ -5,9 +5,11 @@ import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 const routes: Routes = [
-  {path: '' , component: HomeComponent},
-  {path: 'login' , component: LoginComponent},
-  {path: 'signUp' , component: SignUpComponent}
+  {path: '' , component: HomeComponent,
+    children : [
+      {path: 'login' , component: LoginComponent},
+      {path: 'signUp' , component: SignUpComponent}]},
+  
 ];
 
 @NgModule({
