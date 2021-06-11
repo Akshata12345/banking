@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,11 @@ import { AccountCreateComponent } from './components/account/account-create/acco
 import { AccountEditComponent } from './components/account/account-edit/account-edit.component';
 import { AccountViewComponent } from './components/account/account-view/account-view.component';
 import { NavComponent } from './components/nav/nav.component';
+
+import { MaterialModule } from './material/material.module';
+
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +40,9 @@ import { NavComponent } from './components/nav/nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
