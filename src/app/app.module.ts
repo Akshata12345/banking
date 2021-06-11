@@ -14,6 +14,7 @@ import { BankViewComponent } from './components/bank/bank-view/bank-view.compone
 import { AccountCreateComponent } from './components/account/account-create/account-create.component';
 import { AccountEditComponent } from './components/account/account-edit/account-edit.component';
 import { AccountViewComponent } from './components/account/account-view/account-view.component';
+import { NavComponent } from './components/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AccountViewComponent } from './components/account/account-view/account-
     BankViewComponent,
     AccountCreateComponent,
     AccountEditComponent,
-    AccountViewComponent
+    AccountViewComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
